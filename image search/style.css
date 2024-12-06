@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+body{
+    background:#86BBD8;
+    color:white;
+}
+
+h1{
+    text-align: center;
+    color: black;
+    margin: 70px auto;
+    text-shadow: 0 4px 6px rgba(255,255,255,0.5);
+
+}
+form{
+    background: #2F4858;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    border: 4px solid #F6AE2D;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+}
+
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: aliceblue;
+    font-size: 18px;
+    padding: 0 30px;
+
+}
+
+form button{
+ padding: 0 40px;
+ height: 100%;
+ background: #F26419;
+ color: #2F4858;
+ font-size: 15px;
+ border: 5px solid #2F4858;
+ outline: 0;
+ cursor: pointer;
+ border-radius:8px ;
+
+}
+::placeholder{
+    color: aliceblue;
+    font-size: 18px;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+
+}
+form button i {
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-result{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 40px auto;
+
+}
+
+#search-result img {
+    width: 100%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+#show-more-btn{
+    background: black;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 10px auto 100px;
+    cursor: pointer;
+    display: none;
+    text-align: center;
+}
